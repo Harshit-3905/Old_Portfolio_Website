@@ -1,26 +1,25 @@
 .footer {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
     background-color: black;
 }
 
 .portfolio {
+    width: 30%;
     color: white;
     text-align: center;
-    min-width: 500px;
 }
 
 .quick {
-    min-width: 500px;
+    width: 30%;
     color: white;
     text-align: center;
 }
 
 .contact {
-    min-width: 500px;
+    width: 30%;
     text-align: center;
     color: white;
 }
@@ -35,6 +34,7 @@
     color: white !important;
     text-align: left;
     font-size: 15px;
+    gap: 5px;
 }
 
 .ending {
@@ -43,26 +43,32 @@
 }
 
 @media(max-width:576px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+
     .portfolio {
         width: 100%;
-        flex-wrap: wrap;
         font-size: 12px;
+        padding-bottom: 30px;
     }
 
     .quick {
         width: 100%;
+        padding-bottom: 30px;
         font-size: 12px;
     }
 
     #links li {
-        font-size: 12px;
+        font-size: 15px;
+        gap: 5px;
 
     }
 
     .contact {
-        font-size: 12px;
         width: 100%;
-        white-space: wrap;
-        text-overflow: ellipsis;
+        font-size: 12px;
     }
+
+
 }

@@ -55,7 +55,7 @@
     border-radius: 0.8em;
     border: none;
     z-index: 100;
-    background: linear-gradient(to right, #8e2de2, #4a00e0) !important;
+    background: linear-gradient(to right, #00A86B, #006A4E) !important;
     color: ghostwhite;
     overflow: hidden;
 }
@@ -96,7 +96,7 @@
 .projcode::before,
 .projpreview::before {
     content: "";
-    background: rgb(13, 36, 183);
+    background: #006A4E;
     width: 120%;
     left: -10%;
     transform: skew(30deg);

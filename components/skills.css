@@ -1,0 +1,114 @@
+.skills {
+    padding-top: 140px;
+    width: 100%;
+    color: white;
+    padding-top: 2rem;
+}
+
+.skillcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.skillrow {
+    padding-top: 2rem;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+#skill {
+    position: relative;
+    background: transparent;
+    color: #000;
+    border: solid 2px #00A86B;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#skill:hover .tooltip {
+    top: -30px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+#skill svg:hover span,
+#skill svg:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+#skill:hover .tooltip,
+#skill:hover .tooltip::before {
+    background-color: #00A86B;
+    color: #ffffff;
+}
+
+#skill:hover {
+    border: 2px solid #05fba1;
+}
+
+@media (max-width:960px) {
+    #skill {
+        gap: 0;
+        width: 100px;
+        height: 40px;
+    }
+
+    .skillrow {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:576px) {
+    #skill {
+        gap: 0;
+        width: 100px;
+        height: 40px;
+    }
+
+    .skillrow {
+        flex-wrap: wrap;
+    }
+}

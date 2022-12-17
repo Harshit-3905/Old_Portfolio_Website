@@ -1,0 +1,61 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.portfolio {
+    color: white;
+    text-align: center;
+    min-width: 500px;
+}
+
+.quick {
+    min-width: 500px;
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    min-width: 500px;
+    text-align: center;
+    color: white;
+}
+
+#links {
+    margin-left: 40%;
+    width: fit-content;
+}
+
+#links li {
+    text-align: left;
+    font-size: 15px;
+}
+
+@media(max-width:576px) {
+    .portfolio {
+        width: 100%;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .quick {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #links li {
+        font-size: 12px;
+
+    }
+
+    .contact {
+        font-size: 12px;
+        width: 100%;
+        white-space: wrap;
+        text-overflow: ellipsis;
+    }
+}

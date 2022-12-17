@@ -1,0 +1,64 @@
+.header {
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    display: flex;
+    background-color: black;
+    z-index: 100;
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    margin-left: 2vw;
+    margin-top: .75vh;
+    transition: all 1s ease-in-out 0s;
+}
+
+.logo img:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out 0.1s;
+}
+
+.navbar {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin-right: 15px;
+    margin-left: 15px;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navbar ul li a {
+    color: #00A86B;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #006A4E;
+    border-bottom: .2rem solid #006A4E;
+    padding: .5rem 0;
+}
+
+@media (max-width:576px) {
+
+    .navbar ul li {
+        font-size: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}

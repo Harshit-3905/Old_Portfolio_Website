@@ -150,6 +150,19 @@
     font-size: 17px;
 }
 
+@media (max-width:950px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo {
+        height: 50%;
+        width: 100%;
+    }
+}
+
 @media (max-width:576px) {
     .home {
         height: 600px;

@@ -102,11 +102,12 @@
 @media (max-width:960px) {
     #skill {
         gap: 0;
-        width: 100px;
-        height: 40px;
+        width: 18%;
+        height: 50px;
     }
 
     .skillrow {
+        width: 100%;
         flex-wrap: wrap;
     }
 }
@@ -114,8 +115,9 @@
 @media (max-width:576px) {
     #skill {
         gap: 0;
+        width: 40%;
         width: 100px;
-        height: 40px;
+        height: 50px;
     }
 
     .skillrow {

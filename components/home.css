@@ -76,7 +76,7 @@
 
 #visit span {
     font-size: 18px;
-    color: white !important;
+    color: black !important;
     background-color: #00A86B !important;
 }
 
@@ -115,7 +115,7 @@
     padding: 10px 20px;
     border-radius: 100px;
     background: #00A86B;
-    color: white;
+    color: black;
     border: 1px solid transparent;
     display: flex;
     align-items: center;
@@ -125,7 +125,7 @@
 #visit span,
 #arrow {
     background-color: #00A86B !important;
-    color: white !important;
+    color: black !important;
     text-decoration: none;
     color: black;
 }

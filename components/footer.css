@@ -30,9 +30,16 @@
     width: fit-content;
 }
 
+
 #links li {
+    color: white !important;
     text-align: left;
     font-size: 15px;
+}
+
+.ending {
+    color: white;
+    text-align: center;
 }
 
 @media(max-width:576px) {

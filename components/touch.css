@@ -88,7 +88,7 @@ input:valid~label {
 .submit {
     font-family: inherit;
     font-size: 20px;
-    background: #00A86B !important;
+    background: #006A4E !important;
     color: white;
     padding: 0.7em 1em;
     padding-left: 0.9em;
@@ -104,14 +104,14 @@ input:valid~label {
     display: block;
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
-    background: #00A86B;
+    background: #006A4E;
 }
 
 .submit svg {
     display: block;
     transform-origin: center center;
     transition: transform 0.3s ease-in-out;
-    background: #00A86B;
+    background: #006A4E;
 }
 
 .submit:hover .svg-wrapper {

@@ -8,6 +8,12 @@
     background-color: transparent;
 }
 
+.typing-text {
+    font-size: 25px;
+    color: white;
+
+}
+
 .links h3,
 .links p {
     font-size: 18px;

@@ -24,7 +24,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <div class="container">
         <div class="header">
             <div class="logo">
@@ -74,7 +74,8 @@
                 <div class="links" data-aos="fade-up">
                     <h3>Hey !</h3>
                     <h1>I'm <span class="DarkGreen"> Harshit Joshi</span></h1>
-                    <h2>Developer | Gamer</h2>
+                    <span class="typing-text"></span>
+                    <br>
                     <br>
                     <p>I have a passion for technology</p>
                     <br>
@@ -583,7 +584,7 @@
         <br>
         <hr>
         <br>
-        <div class="ending"> Made with <i class="fa-solid fa-heart"></i> by
+        <div class="ending"> Made with <i class="fa fa-heart pulse"></i> by
             <a href="https://www.linkedin.com/in/harshit-joshi-40953321b/">
                 <span class="LightGreen">
                     Harshit Joshi
@@ -601,18 +602,10 @@
     </script>
     <script src="/particles.js/app.js">
     </script>
-    <script>
-        AOS.init();
-        document.onreadystatechange = function () {
-            if (document.readyState !== "complete") {
-                document.querySelector("body").style.visibility = "hidden";
-                document.querySelector("#preloader").style.visibility = "visible";
-            } else {
-                document.querySelector("#preloader").style.display = "none";
-                document.querySelector("body").style.visibility = "visible";
-            }
-        };
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
